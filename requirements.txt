@@ -1,9 +1,4 @@
 fastapi
 uvicorn
 pandas
-sqlite3
-requests
 streamlit
-sentence-transformers
-faiss-cpu
-textblob
