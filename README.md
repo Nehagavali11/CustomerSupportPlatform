@@ -2,6 +2,9 @@ AI Customer Support Insight Platform
 
 An AI-powered dashboard that analyzes customer support tickets using rule-based NLP to generate actionable insights and recommendations. Built with FastAPI (backend) and Streamlit (frontend).
 
+🔗 Live App 
+https://custinsight.streamlit.app
+
 🚀 Features
 Upload CSV of customer tickets
 Automatic categorization & sentiment analysis
@@ -16,10 +19,6 @@ Lightweight, no heavy ML or LLM required
 🏗️ Architecture
 
 <img width="2526" height="2268" alt="Need_ - visual selection (1)" src="https://github.com/user-attachments/assets/cc291fe8-0ea3-4a46-aca1-ccb402ce76fc" />
-
-
-🔗 Live App 
-https://custinsight.streamlit.app
 
 
 🎨 Screenshots
