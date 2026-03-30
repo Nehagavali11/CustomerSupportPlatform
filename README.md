@@ -18,12 +18,17 @@ Lightweight, no heavy ML or LLM required
 <img width="2526" height="2268" alt="Need_ - visual selection (1)" src="https://github.com/user-attachments/assets/cc291fe8-0ea3-4a46-aca1-ccb402ce76fc" />
 
 
+🔗 Live App 
+https://custinsight.streamlit.app
+
+
 🎨 Screenshots
 
 <img width="1920" height="866" alt="Screenshot (815)" src="https://github.com/user-attachments/assets/f83e8f34-3a2a-4157-b953-088f60535c73" />
 
 
 <img width="1920" height="865" alt="Screenshot (816)" src="https://github.com/user-attachments/assets/33b818a0-a949-423e-8811-212382dfb6e2" />
+
 
 ⚙️ Installation
 git clone <repo-url>
