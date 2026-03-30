@@ -3,3 +3,9 @@ uvicorn
 pandas
 streamlit
 python-multipart
+streamlit>=1.30
+pandas
+numpy
+plotly
+altair
+requests
