@@ -60,6 +60,22 @@ BASE_URL = "https://customersupportplatform-3.onrender.com/"
 # ==================== SIDEBAR ====================
 st.sidebar.header("⚙️ Upload & Filters")
 file = st.sidebar.file_uploader("Upload CSV file", type=["csv"])
+
+# ==================== DATA PREVIEW ====================
+if file is not None:
+    try:
+        # Read CSV for preview
+        df_preview = pd.read_csv(file)
+        st.sidebar.subheader("Preview of Uploaded Data")
+        rows_to_show = st.sidebar.slider("Rows to preview", min_value=5, max_value=20, value=10)
+        st.sidebar.dataframe(df_preview.head(rows_to_show))
+
+        # Reset file pointer so backend can read it again
+        file.seek(0)
+
+    except Exception as e:
+        st.sidebar.error(f"❌ Could not read CSV: {e}")
+        
 process_clicked = st.sidebar.button("Process Data", key="process_button")
 
 # Backend check
@@ -147,3 +163,5 @@ if st.session_state.insights_clicked and st.session_state.insights_data:
     recommendation = data.get("recommendation", "No recommendation available")
     st.subheader("Recommendation")
     st.markdown(f"<div style='background-color:{BOT_COLOR};color:white;padding:10px;border-radius:8px'>{recommendation}</div>", unsafe_allow_html=True)
+
+
